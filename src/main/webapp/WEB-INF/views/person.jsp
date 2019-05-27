@@ -49,7 +49,7 @@
 </style>
 </head>
 <body background="background1.jpg">
-	<h1>Add a Person</h1>
+	<h1>Add a Student</h1>
 
 	<c:url var="addAction" value="/person/add"></c:url>
 
@@ -78,9 +78,9 @@
 			</tr>
 			<tr>
 				<td colspan="2"><c:if test="${!empty person.name}">
-						<input type="submit" value="<spring:message text="Edit Person"/>" />
+						<input type="submit" value="<spring:message text="Edit Student"/>" />
 					</c:if> <c:if test="${empty person.name}">
-						<input type="submit" value="<spring:message text="Add Person"/>" />
+						<input type="submit" value="<spring:message text="Add Student"/>" />
 					</c:if></td>
 			</tr>
 		</table>
@@ -90,9 +90,9 @@
 	<c:if test="${!empty listPersons}">
 		<table class="tg">
 			<tr>
-				<th width="80">Person ID</th>
-				<th width="120">Person Name</th>
-				<th width="120">Person Country</th>
+				<th width="80">Student ID</th>
+				<th width="120">Student Name</th>
+				<th width="120">Student Country</th>
 				<th width="60">Edit</th>
 				<th width="60">Delete</th>
 			</tr>
